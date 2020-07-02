@@ -28,6 +28,10 @@
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 						
+<html>
+<head>
+<title>Timer</title>
+
 	<script language="JavaScript">
 	
 		var SetTime = 10;		// 최초 설정 시간(기본 : 초)
@@ -36,7 +40,7 @@
 			
 			m = Math.floor(SetTime / 60) + "분 " + (SetTime % 60) + "초";	// 남은 시간 계산
 			
-			var msg ="다운로드 시작까지 <font color='red'>" + m + "</font> 입니다.";
+			var msg = "다운로드 시작 까지 남은 시간은 <font color='red'>" + m + "</font> 입니다.";
 			
 			document.all.ViewTimer.innerHTML = msg;		// div 영역에 보여줌 
 					
@@ -54,8 +58,17 @@
 		
 	</script>
 
+</head>
 
-출처: https://rebellion21.tistory.com/21 [잡동사니]
+<body >
+	
+	<div id="ViewTimer"></div>
+
+</body>
+</html>
+
+
+
 						</div>
 					</div>
 				</div>
